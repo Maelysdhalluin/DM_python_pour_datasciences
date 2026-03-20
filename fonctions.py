@@ -1,1 +1,11 @@
-def code_commune_complet(): 
+def code_commune_complet(df,a,b): 
+    b = f"{b}"
+    if len(b) == 3: 
+        return a + b
+    elif len(b) == 2 :
+        return a + '0' + b
+    else : 
+        return a + '00' + b
+    
+
+
