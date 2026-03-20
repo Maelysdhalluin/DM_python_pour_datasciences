@@ -1,4 +1,5 @@
 def code_commune_complet(df,a,b): 
+    for i 
     b = f"{b}"
     if len(b) == 3: 
         return a + b
