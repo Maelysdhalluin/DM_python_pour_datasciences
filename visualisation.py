@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def carte_candidat(df, gdf_limite, nom_candidat):
     """
     Génère une carte de score pour un candidat donné.
@@ -8,9 +9,9 @@ def carte_candidat(df, gdf_limite, nom_candidat):
     data_map = gdf_limite.merge(data, left_on='INSEE_DEP', right_on='code_departement')
 
     fig, ax = plt.subplots(figsize=(8, 8))
-    data_map.plot(column='score_departement', 
-                  legend=True, 
-                  cmap='RdBu_r', 
+    data_map.plot(column='score_departement',
+                  legend=True,
+                  cmap='RdBu_r',
                   ax=ax)
 
     ax.set_title(f'Score de {nom_candidat} : % par rapport moyenne nationale')
